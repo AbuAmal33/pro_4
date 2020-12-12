@@ -3,9 +3,9 @@ import {useDispatch, useSelector} from "react-redux";
 import Photo from "./Photo";
 
 function Photos(props) {
-    const photos = useSelector(state => state.photos);
-    const selectedUserId = useSelector(state => state.selectedUserId);
-    const filter = useSelector(state => state.filter);
+    const photos = useSelector(state => state.photos.photos);
+    const selectedUserId = useSelector(state => state.albums.selectedUserId);
+    const filter = useSelector(state => state.photos.filter);
     const dispatch = useDispatch();
 
     const filteredPhotos = photos
