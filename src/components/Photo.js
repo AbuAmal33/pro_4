@@ -2,7 +2,7 @@ import React from 'react';
 
 function Photo(props) {
     return (
-        <li>
+        <li className={'photo'}>
             {props.photo.thumbnailUrl}
         </li>
     );

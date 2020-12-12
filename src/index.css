@@ -51,6 +51,18 @@ body {
     cursor: pointer;
 }
 
+.album:hover {
+    background-color: aliceblue;
+}
+
+.photo {
+    cursor: pointer;
+}
+
+.photo:hover {
+    background-color: aliceblue;
+}
+
 .albums ul li {
     list-style: none;
     padding: 10px;
