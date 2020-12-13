@@ -2,9 +2,10 @@ import React from 'react';
 
 function Photo(props) {
     return (
-        <li className={'photo'}>
+        <div className={'photo'}>
             <img src={props.photo.thumbnailUrl} />
-        </li>
+        </div>
+
     );
 }
 

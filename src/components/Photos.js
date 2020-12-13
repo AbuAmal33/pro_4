@@ -25,11 +25,11 @@ function Photos(props) {
             <div className={'name_2'}>
                 ФОТО
             </div>
-            <ol>
+            <div>
                 {filteredPhotos.map(photo => {
                     return <Photo photo={photo} key={photo.id}/>
                 })}
-            </ol>
+            </div>
         </div>
     );
 }

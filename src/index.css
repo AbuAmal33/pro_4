@@ -57,6 +57,8 @@ body {
 
 .photo {
     cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
 }
 
 .photo:hover {
@@ -75,11 +77,6 @@ body {
     display: block;
     font-size: 16px;
     margin-left: 150px;
-}
-
-.photos ol li{
-    padding: 10px;
-    border-bottom: 1px solid lightgrey;
 }
 
 .no-user-select {
