@@ -27,10 +27,3 @@ export const loadPhotos = () => {
             })
     }
 }
-
-export const selectUser = (userId) => {
-    return {
-        type: 'users/select',
-        payload: userId
-    }
-}

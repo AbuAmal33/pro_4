@@ -1,21 +1,18 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
-import {selectUser} from "../redux/actions";
+import {Link} from "react-router-dom";
 
 function Album(props) {
     const dispatch = useDispatch();
 
-    const handleSelectorAlbum = () => {
-        dispatch(selectUser(props.album.id))
-    }
-
     return (
-        <div onClick={handleSelectorAlbum}>
-            <li className={'album'} >
-                {props.album.title}
-            </li>
-        </div>
-
+        <li>
+            <Link to={`/${props.album.id}`}>
+                <div className={'album'} >
+                    {props.album.title}
+                </div>
+            </Link>
+        </li>
     );
 }
 
