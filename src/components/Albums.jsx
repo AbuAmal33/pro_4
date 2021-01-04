@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Album from './Album';
 
+
 function Albums(props) {
   const albums = useSelector((state) => state.albums.albums);
 
@@ -16,5 +17,7 @@ function Albums(props) {
     </div>
   );
 }
+
+
 
 export default Albums;

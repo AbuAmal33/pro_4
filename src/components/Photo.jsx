@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Photos from './Photos';
 
 function Photo(props) {
   return (
@@ -6,6 +8,11 @@ function Photo(props) {
       <img src={props.photo.thumbnailUrl} />
     </div>
   );
+}
+
+
+Photo.propTypes = {
+  photo: PropTypes.object
 }
 
 export default Photo;

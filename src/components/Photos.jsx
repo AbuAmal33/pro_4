@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Photo from './Photo';
 
+
 function Photos(props) {
   const photos = useSelector((state) => state.photos.photos);
   const filter = useSelector((state) => state.photos.filter);
@@ -34,5 +35,7 @@ function Photos(props) {
     </div>
   );
 }
+
+
 
 export default Photos;
